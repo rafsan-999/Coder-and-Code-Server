@@ -11,6 +11,7 @@ To install, run:
 
 #### System packages
 If you've installed Coder via a system package Coder, you can configure the server by setting the following variables in /etc/coder.d/coder.env:
+Copy the code below and paste it to the following path: vi /etc/coder.d/coder.env
 
     # String. Specifies the external URL (HTTP/S) to access Coder.
     CODER_ACCESS_URL=https://coder.example.com
@@ -38,7 +39,8 @@ If you've installed Coder via a system package Coder, you can configure the serv
     # String. Specifies the path to the private key for the certificate. It requires a
     # PEM-encoded file.
     CODER_TLS_KEY_FILE=
-    
+
+   
 # To run Coder as a system service on the host:
 
     # Use systemd to start Coder now and on reboot

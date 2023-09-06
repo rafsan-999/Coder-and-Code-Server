@@ -52,7 +52,7 @@ If you've installed Coder via a system package Coder, you can configure the serv
 * By default, the Coder server runs on http://127.0.0.1:3000
 * Open your web browser and type your IP with 3000 port you will get Coder Web Interface.
 
-# To Install Code-Server run:
+# Now Install Code-Server to run the following command below:
     curl -fsSL https://code-server.dev/install.sh | sh
 # Debian, Ubuntu
 The standalone arm64 .deb does not support Ubuntu 16.04 or earlier. Please upgrade or build with npm.

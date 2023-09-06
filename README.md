@@ -3,13 +3,13 @@ Coder is a Self-Hosted Remote Development Platform
 Coder shifts software development from local machines to the cloud. 
 Onboard new developers in minutes, build code on powerful servers—all while keeping source code and data secure behind your firewall.
 #### Official documentation link: https://coder.com/docs/v2/latest/install/install.sh
-# Coder Install on Ubuntu 20.04 LTS
+### Coder Install on Ubuntu 20.04 LTS
 To install, run:
 
     # This will automatically use supported package managers when available
     curl -fsSL https://coder.com/install.sh | sh
 
-## System packages
+### System packages
 If you've installed Coder via a system package Coder, you can configure the server by setting the following variables in /etc/coder.d/coder.env:
 
     # String. Specifies the external URL (HTTP/S) to access Coder.
@@ -39,13 +39,14 @@ If you've installed Coder via a system package Coder, you can configure the serv
     # PEM-encoded file.
     CODER_TLS_KEY_FILE=
     
-## To run Coder as a system service on the host:
+# To run Coder as a system service on the host:
+
     # Use systemd to start Coder now and on reboot
     sudo systemctl enable --now coder 
     # View the logs to ensure a successful start
     journalctl -u coder.service -b
     
-## To restart Coder after applying system changes:
+##### To restart Coder after applying system changes:
     sudo systemctl restart coder
     
 ## After installing, use the in-terminal instructions to start the Coder

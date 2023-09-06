@@ -49,17 +49,16 @@ If you've installed Coder via a system package Coder, you can configure the serv
 ##### To restart Coder after applying system changes:
     sudo systemctl restart coder
     
-## After installing, use the in-terminal instructions to start the Coder
+### After installing, use the in-terminal instructions to start the Coder
 * By default, the Coder server runs on http://127.0.0.1:3000
 * Open your web browser and type your IP with 3000 port you will get Coder Web Interface.
 
 # Now Install Code-Server to run the following command below:
     curl -fsSL https://code-server.dev/install.sh | sh
-# Debian, Ubuntu
+##### Debian, Ubuntu
 The standalone arm64 .deb does not support Ubuntu 16.04 or earlier. Please upgrade or build with npm.
 
     curl -fOL https://github.com/coder/code-server/releases/download/v$VERSION/code-server_${VERSION}_amd64.deb
     sudo dpkg -i code-server_${VERSION}_amd64.deb
     sudo systemctl enable --now code-server@$USER
-
-# Now visit http://127.0.0.1:8080. Your password is in ~/.config/code-server/config.yaml
+Now visit http://127.0.0.1:8080. Your password is in ~/.config/code-server/config.yaml

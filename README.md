@@ -52,3 +52,13 @@ If you've installed Coder via a system package Coder, you can configure the serv
 * By default, the Coder server runs on http://127.0.0.1:3000
 * Open your web browser and type your IP with 3000 port you will get Coder Web Interface.
 
+# To Install Code-Server run:
+    curl -fsSL https://code-server.dev/install.sh | sh
+# Debian, Ubuntu
+The standalone arm64 .deb does not support Ubuntu 16.04 or earlier. Please upgrade or build with npm.
+
+    curl -fOL https://github.com/coder/code-server/releases/download/v$VERSION/code-server_${VERSION}_amd64.deb
+    sudo dpkg -i code-server_${VERSION}_amd64.deb
+    sudo systemctl enable --now code-server@$USER
+
+# Now visit http://127.0.0.1:8080. Your password is in ~/.config/code-server/config.yaml

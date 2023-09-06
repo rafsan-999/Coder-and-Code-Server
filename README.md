@@ -9,7 +9,7 @@ To install, run:
     # This will automatically use supported package managers when available
     curl -fsSL https://coder.com/install.sh | sh
 
-### System packages
+#### System packages
 If you've installed Coder via a system package Coder, you can configure the server by setting the following variables in /etc/coder.d/coder.env:
 
     # String. Specifies the external URL (HTTP/S) to access Coder.
